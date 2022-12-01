@@ -1,0 +1,15 @@
+body {
+	margin: 0px;
+	color: black;
+}
+
+fieldset {
+	background: darkgray;
+}
+
+.flex {
+	display: flex;
+}
+form {
+	margin-right: 30px;
+}

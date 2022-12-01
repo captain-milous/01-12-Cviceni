@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hra dle zadání</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js" defer></script>
+
+</head>
+<body id="body">
+
+  <h1>Hra podle zadání</h1>
+  <p id="vysledek"></p>
+  <div id="zmizet">
+    <div id="pravidla">
+      <h3>Pravidla hry</h3>
+      <ul>
+        <li>hráč snaží odhadnout náhodně zvolené číslo r, kde r  je větší než 0 a menší než 1001;</li>
+        <li>hráč píše svůj odhad do speciálního pole;</li>
+        <li>hráč má pouze jeden pokus a vybere-li číslo špatně - hra se skončí;</li>
+        <li>hráč má k dispozici jiné pole kam může zadávat čísla mezi 1 a 99;</li>
+        <li>po té co hráč napíše číslo do druhého pole (označme to číslo a) se mu vypíše výsledek r mod a  a uloží se do seznamu jíž získaných výsledků;</li>
+        <li>hráč musí vždy mít k dispozici veškeré získané výsledky popsané v předchozím odstavci;</li>
+        <li>hráč má vždy možnost začít hru znova;</li>
+      </ul>
+    </div>
+    <br>
+    
+      <fieldset>
+        
+        <div class="flex">
+          <form id="frm2">
+            <h3>Odhad čísla v rozmezí 1 až 99, pro funkci R mod A</h3>
+            Tvůj pokus: <input type="number" id="answ2" name="answer1" min="1" max="99"><br><br>
+            <input type="button" onclick="myFunction2()" value="Submit">
+            <br>
+          </form>
+          <form id="frm1">
+            <h3>Myslím si číslo od 1 do 1000, uhodni ho!</h3>
+            Tvoje odpověď: <input type="number" id="answ1" name="answer1" min="1" max="1000"><br><br>
+            <input type="button" onclick="myFunction1()" value="Submit">
+            <br>
+          </form>
+        </div>
+
+      </fieldset>
+      <br>
+    
+  </div>
+  <p id="autor">Miloš Tesař C3b</p>
+
+</body>
+</html>
