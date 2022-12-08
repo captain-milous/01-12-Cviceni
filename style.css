@@ -1,15 +1,50 @@
 body {
 	margin: 0px;
 	color: black;
+	margin: 5px;
+	text-align: center;
 }
 
 fieldset {
 	background: darkgray;
 }
 
-.flex {
-	display: flex;
-}
 form {
-	margin-right: 30px;
+	margin: 25px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.container { 
+  height: 200px;
+  position: relative; 
+  display: none;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.reset{
+	height: 50px;
+	width: 500px;
+	size: 40px;
+}
+
+#pravidla {
+	text-align: left;
+}
+
+#autor {
+	text-align: right;
 }
